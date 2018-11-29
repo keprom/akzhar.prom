@@ -91,6 +91,7 @@ class Billing extends Controller
 		$data['month_to_look'] = $this->db->query("select * from industry.current_period()")->row()->current_period;
 		#end of added
 		$this->load->view("left",$data);
+		$this->load->view("messages");		
 	}
 	function phpinfo()
 	{ 
@@ -2224,6 +2225,8 @@ class Billing extends Controller
     function perehod()
 	{
 		$this->db->query("select * from industry.goto_next_period_fine()");
+		$array = array(1 => 'Переход в следующий месяц прошел успешно!');
+		$this->session->set_flashdata('success', $array);		
 		redirect("billing");
 	}
 	function oplata_delete()
