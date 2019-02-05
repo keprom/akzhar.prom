@@ -65,11 +65,6 @@
     </tfoot>
 </table>
 
-</body>
-</html>ge.css">
-</head>
-<body>
-
 <table class="border-table">
     <thead>
     <tr>
