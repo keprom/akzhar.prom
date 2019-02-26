@@ -7,10 +7,10 @@ echo "Другая дата <input  name=data_schet value='' ><br>";
 echo "Другой номер счета оплаты <input  name=number_schet value='' ><br>";
 #added
 echo "Другой номер договора <input name=another_dog value=''><br>";
+echo "Тип учета <input type=text name=alt_title value='Электроэнергия'><br>";
 #end of added
 echo "<input type=hidden name=type value='by_tenge' >";
 echo "Выдать счет фактурой <input type=checkbox name=schet  ><br>";
-echo "Тип учета <input type=text name=alt_title value='Электроэнергия'><br>";
 $i=0;
 foreach ($tariffs->result() as  $tariff)
 {
