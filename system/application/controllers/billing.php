@@ -1629,7 +1629,7 @@ class Billing extends Controller
                     $rec['N_DOKUM'] = iconv(mb_detect_encoding($rec['N_DOKUM'], mb_detect_order(), true), "UTF-8", $rec['N_DOKUM']);
 
                     $sql .= "\nINSERT INTO industry.oplata_buf(
-					 data, un_nom, dog, data_v, n_dokum, sum, schet, vo) values 
+					 data, un_nom, nomer1c, data_v, n_dokum, sum, schet, vo) values 
 					 ('{$rec['DATA']}','{$rec['UN_NOM']}',{$rec['DOG']},
 					 '{$rec['DATA_V']}','{$rec['N_DOKUM']}',{$rec['SUM']},
 					 '{$rec['SCHET']}',{$rec['VO']});\n";
